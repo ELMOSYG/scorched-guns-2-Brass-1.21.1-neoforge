@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "group": "zinc_ingot",
+  "experience": 0.7,
+  "ingredient": {
+    "item": "scbrass:brass_blend"
+  },
+  "result": {
+    "id": "scbrass:brass_ingot",
+    "count": 1
+  }
+}

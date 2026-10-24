@@ -1,0 +1,15 @@
+{
+  "item.scbrass.zinc_ingot": "锌锭",
+  "item.scbrass.raw_zinc": "粗锌",
+  "item.scbrass.brass_ingot": "黄铜锭",
+  "item.scbrass.zinc_nugget": "锌粒",
+  "item.scbrass.brass_blend": "黄铜混合物",
+
+  "block.scbrass.zinc_block": "锌块",
+  "block.scbrass.raw_zinc_block": "粗锌块",
+  "block.scbrass.brass_block": "黄铜块",
+  "block.scbrass.zinc_ore": "锌矿石",
+  "block.scbrass.deepslate_zinc_ore": "深层锌矿石",
+
+  "creativetab.sc_brass": "焦灼枪械：黄铜"
+}

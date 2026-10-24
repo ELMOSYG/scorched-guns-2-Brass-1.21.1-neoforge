@@ -1,0 +1,15 @@
+{
+  "item.scbrass.zinc_ingot": "Zinc Ingot",
+  "item.scbrass.raw_zinc": "Raw Zinc",
+    "item.scbrass.brass_ingot": "Brass Ingot",
+    "item.scbrass.zinc_nugget": "Zinc Nugget",
+    "item.scbrass.brass_blend": "Brass Blend",
+
+  "block.scbrass.zinc_block": "Block of Zinc",
+  "block.scbrass.raw_zinc_block": "Block of Raw Zinc",
+  "block.scbrass.brass_block": "Block of Brass",
+    "block.scbrass.zinc_ore": "Zinc Ore",
+    "block.scbrass.deepslate_zinc_ore": "Deepslate Zinc Ore",
+
+  "creativetab.sc_brass": "Scorched Guns Brass"
+}

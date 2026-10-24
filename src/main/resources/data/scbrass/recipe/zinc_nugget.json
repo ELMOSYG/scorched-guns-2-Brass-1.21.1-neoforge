@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "scbrass:zinc_ingot"
+    }
+  ],
+  "result": {
+    "id": "scbrass:zinc_nugget",
+    "count": 9
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "scbrass:zinc_ore",
+    "scbrass:zinc_block",
+    "scbrass:deepslate_zinc_ore",
+    "scbrass:raw_zinc_block",
+    "scbrass:brass_block"
+  ]
+}

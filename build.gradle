@@ -1,0 +1,50 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.146'
+}
+
+version = '1.0.0'
+group = 'top.ribs.scbrass'
+
+base {
+    archivesName = 'scguns-brass'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = '21.1.249'
+
+    parchment {
+        minecraftVersion = '1.21.1'
+        mappingsVersion = '2024.11.17'
+    }
+
+    runs {
+        client { client() }
+        server { server() }
+    }
+
+    mods {
+        scbrass { sourceSet sourceSets.main }
+    }
+}
+
+// Straight into the dev instance's mods folder, so a build is playable without a manual copy.
+// Kept as a separate task so build/libs still holds the artifact for uploads.
+def devInstanceMods = 'D:/MCJAVA/.minecraft/versions/1.21.1-NeoForge_21.1.250/mods'
+
+tasks.register('deployToInstance', Copy) {
+    description = 'Copies the built jar into the dev instance mods folder.'
+    group = 'deployment'
+    from tasks.named('jar')
+    into devInstanceMods
+    // drop older builds of this mod so the folder never holds two versions
+    doFirst {
+        fileTree(devInstanceMods).matching { include 'scguns-brass-*.jar' }.each { it.delete() }
+    }
+}
+
+tasks.named('build') {
+    finalizedBy 'deployToInstance'
+}

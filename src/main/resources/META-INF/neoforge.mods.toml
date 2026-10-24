@@ -1,0 +1,33 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "scbrass"
+version = "1.0.0"
+displayName = "Scorched Guns Brass"
+description = '''
+Brass and zinc for Scorched Guns, for packs that have no other mod supplying them. Do not install alongside Create.
+'''
+authors = "ribs"
+
+[[dependencies.scbrass]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.scbrass]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.scbrass]]
+modId = "scguns"
+type = "required"
+versionRange = "[1.5.0,)"
+ordering = "NONE"
+side = "BOTH"
